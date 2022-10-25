@@ -1,0 +1,219 @@
+body{
+    background-color: black;
+}
+ul {
+    display: flex;
+    margin-left:370px;
+}
+li {
+    list-style: none;
+}
+.div-ul {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 0 4px;
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+    animation: Animate 1.5s linear infinite;
+}
+@keyframes Animate{
+    0% {filter: hue-rotate(0deg);}
+    100% {filter: hue-rotate(360deg);}
+}
+.div1 {
+width: 250px;
+height: 10px;
+background-color:yellow;
+animation: one 3s linear infinite;
+}
+@keyframes one{
+    0%{margin-left: 0px; background-color: red;}
+    50%{margin:auto; width: 300px; background-color: blue;}
+    100%{margin-left: auto; background-color: green;}
+}
+.div2 {
+    width: 100px;
+    height: 10px;
+    margin-top: 20px;
+    background-color:yellow;
+    animation: two 3s linear infinite;
+    }
+    @keyframes two{
+        0%{margin-left: 0px; background-color: red;}
+        50%{margin:auto; background-color: blue; margin-top: 20px;}
+        100%{margin-left: auto; background-color: green;}
+    }
+    .div3 {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        border: 2px solid;
+        border-color:yellow;
+        animation: three 3s linear infinite;
+        }
+        @keyframes three{
+        0%{margin-left: 0px; transform: rotate(0deg);}
+        20%{margin-left: 25%;}
+        50%{margin:auto; border-radius: 50%; margin-top: 20px; }
+        75%{margin-left: 75%;}
+        100%{margin-left: auto; transform: rotate(180deg);}
+        }
+.div3:hover{
+    animation-play-state: paused;
+} 
+.inner{
+    vertical-align: top;
+    display: inline-block;
+    background-color: blue;
+    width: 100%;
+    animation: inner 3s ease-in infinite;
+}
+@keyframes inner{
+    0% {height: 0%; background-color: red;}
+    50% {height: 100%; border-radius: 50%; background-color: blue;}
+    100% {height: 0%; background-color: green;}
+}
+.div-1{
+    width: 100px;
+    height: 20px;
+    margin-top: 20px;
+    border:2px solid rgb(154, 51, 250);
+    animation: div-1 3s linear forwards;
+}
+@keyframes div-1{
+    0%{margin-left:0px; margin-top: 20px }
+    50%{margin:auto ; width: 250px; height: 50PX;  margin-top: 20px; 
+        background-image: url(../images/hello.png); background-size: 50px 50px; background-repeat: no-repeat;}
+    100%{margin-left:auto; }
+}
+.div-2{
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    background-color: rgb(141, 44, 232);
+    animation: div-2 3s linear forwards reverse;
+    animation-delay: 3s;
+}
+@keyframes div-2{
+    0%{margin-left:0%; margin-top: 10px; background-color: yellow;}
+    25%{margin-left:25%;}
+    50%{margin-left:50%; margin-top: 10px }
+    75%{margin-left: 75%;}
+    100%{margin-left:auto; }
+}
+.div-3{
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    background-color: rgb(125, 41, 204);
+    animation: div-3 3s linear forwards ;
+    animation-delay: 6s;
+}
+@keyframes div-3{
+    0%{margin-left:0%; margin-top: 10px }
+    25%{margin-left: 25%;}
+    50%{margin-left: 50%; margin-top: 10px }
+    75%{margin-left: 75%;}
+    100%{margin-left:auto; background-color: yellow;}
+}
+.div-4{
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    border:2px solid rgb(154, 51, 250);
+    animation: div-4 3s linear forwards reverse;
+    animation-delay: 9s;
+}
+@keyframes div-4{
+    0%{margin-left:0px; margin-top: 10px;}
+    50%{margin:auto ; width: 250px; height: 50PX;  margin-top: 20px; 
+        background-image: url(../images/hello.png); background-size: 50px 50px; background-repeat: no-repeat;}    100%{margin-left:auto;}
+}
+.div-5{
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    border:2px solid rgb(154, 51, 250);
+    animation: div-5 3s linear forwards;
+    animation-delay: 12s;
+}
+@keyframes div-5{
+    0%{margin-left:0px; margin-top: 10px }
+    50%{margin:auto ; width: 250px; height: 50PX;  margin-top: 20px; 
+        background-image: url(../images/hello.png); background-size: 50px 50px; background-repeat: no-repeat;} 
+        100%{margin-left:auto;  }
+}
+.div-6{
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    background-color: rgb(71, 24, 115);
+    animation: div-6 3s linear forwards reverse ;
+    animation-delay: 15s;
+}
+@keyframes div-6{
+    0%{margin-left:0%; margin-top: 10px; background-color: yellow; }
+    25%{margin-left: 25%;}
+    50%{margin-left: 50%; margin-top: 10px }
+    75%{margin-left: 75%;}
+    100%{margin-left:auto;}
+}
+.div-7{
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    background-color: rgb(71, 24, 115);
+    animation: div-7 3s linear forwards ;
+    animation-delay: 18s;
+}
+@keyframes div-7{
+    0%{margin-left:0%; margin-top: 10px}
+    25%{margin-left: 25%;}
+    50%{margin-left: 50% ;margin-top: 10px}
+    75%{margin-left: 75%;}
+    100%{margin-left:auto; background-color: yellow;}
+}
+.div-8{
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    border:2px solid rgb(154, 51, 250);
+    animation: div-8 3s linear forwards reverse;
+    animation-delay: 21s;
+}
+@keyframes div-8{
+    0%{margin-left:0px; margin-top: 10px }
+    50%{margin:auto ; width: 250px; height: 50PX;  margin-top: 20px; 
+        background-image: url(../images/hello.png); background-size: 50px 50px; background-repeat: no-repeat;}     
+        100%{margin-left:auto;}
+}
+.text {
+    background: linear-gradient(-45deg, #DFB79E, #DFB79E, #380435, #380435, #de52e2, #de52e2);
+    background-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 6s ease-in-out infinite;
+    -moz-animation: animated_text 6s ease-in-out infinite;
+    -webkit-animation: animated_text 6s ease-in-out infinite;
+}
+@keyframes animated_text {
+    0% {background-position: 0px 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0px 50%;}
+}
+
+
+
